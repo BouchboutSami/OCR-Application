@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./display-result.css" />
+    <title>OCR project</title>
+  </head>
+  <body>
+    <section class="result">
+      <header>
+        <a href="../Home-page/home.html"><img src="../assets/LOGO.svg" alt="LOGO I2T" class="logo" /></a>
+        <div class="icons">
+          <img src="../assets/minimize.svg" class="icon"></img>
+          <img src="../assets/Close.svg" class="icon"></img>
+        </div>
+      </header>
+      <div class="under-header">
+        <aside>
+         <div class="acceuil">
+          <a href="../Home-page/home.html"><img src="../assets/accueil.svg" /></a>
+          <a href="../Home-page/home.html"><p>Acceuil</p></a>
+         </div>
+         <div class="Aide">
+          <a href="../aide-page/aide.html"><img src="../assets/aide.svg" /></a>
+          <a href="../aide-page/aide.html"><p>Aide</p></a>
+         </div>
+         <div class="Quitter" id="Quit">
+          <img src="../assets/Quit.svg" />
+          <p>Quitter</p>
+         </div>
+        </aside>
+        <div class="display-result">
+          <h1>Résultat</h1>
+          <div class="main-result">
+            <img src="" id="input-image"></img>
+            <div class="math-result">
+              <p id="size-image">Size image: 55ko</p>
+              <p id="name-image">image name : chiffre7</p>
+              <p id="result">Résultat</p>
+              <p id="Accuracy">Accuracy:</p>
+              <p id="font">font:</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./result.js"></script>
+</html>

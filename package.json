@@ -1,0 +1,15 @@
+{
+  "name": "ocr_project",
+  "version": "1.0.0",
+  "description": "digit recognation",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "electron": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron ."
+  },
+  "author": "Bouchbout sami",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^18.0.3"
+  }
+}
