@@ -70,9 +70,30 @@
             <h3>Qui sommes nous ? </h3> 
             <img src="../assets/chevron-down-solid.svg" alt="" width="20px" height="auto" class="hamax" > 
           </div> 
-          <p class="rep">I2T (image to text) est une application desktop de reconnaissance de caractères
-            permettant d’extraire le texte contenu dans une image en utilisant la méthode
-            de corrélation</p> 
+          <form class="rep">
+            <div class="infos">
+              <div class="prenom">
+                <label for="prenom">votre prenom</label>
+                 <input type="text" id="prenom" name="prenom">
+              </div>
+              <div class="nom">
+                <label for="nom">votre nom</label><br>
+                <input type="text" id="nom" name="nom">
+              </div>
+                <div class="mail">
+                  <label for="email"> Adresse email</label><br>
+                  <input type="email" id="email" name="email">
+                </div>   
+                <div class="message">
+                  <label for="message" >message   </label><br>
+                  <textarea type="text" name="message" id="message"  ></textarea>
+                </div>  
+                <div class="envoyer">
+                  <input type="submit" value="envoyer">
+                </div>   
+              </div>
+            
+          </form> 
               
       </div>
             

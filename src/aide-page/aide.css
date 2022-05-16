@@ -116,7 +116,6 @@ h1 {
   width: 100%;
   gap: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #E5E5E5;
 
 }
 .titre_quest{
@@ -130,6 +129,49 @@ h2{
 .rephamaz{
   display: flex;
 }
+
 .rep{
   display: none ;
+}
+.infos{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  row-gap: 40px;
+  column-gap: 40px;
+  
+  }
+  input {
+    width: 100%;
+    height: 70%;
+    border: none;
+    
+  }
+.infos > * {
+  border: 3px solid #743F8C ;
+  border-radius: 4px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+label {
+  position:relative;
+  top:-12px;
+  left:20px;
+  background-color: white;
+}
+.message {
+  grid-row-start:3 ;
+  grid-row-end: 7 ;
+  grid-column: span 2 ;
+  
+}
+.envoyer {
+  grid-row-start:7 ;
+  grid-row-end: 8;
+  grid-column-start: 2;
+  
 }
