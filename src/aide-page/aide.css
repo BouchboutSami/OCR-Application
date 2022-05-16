@@ -82,8 +82,8 @@ aside {
   width: calc(100% - 215px);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
   color: #555555;
   font-family: "Montserrat", sans-serif;
 }
@@ -91,4 +91,45 @@ aside {
 a {
   text-decoration: none;
   color: #787486;
+}
+h1 {
+  margin-left: 10%;
+  font-size: 32px;
+  letter-spacing: 2px;
+  background: linear-gradient(to bottom, transparent 70%, #a996f6 20%);
+  
+  align-self: flex-start;
+  
+}
+.accordion {
+  /* align-self: flex-start; */
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #E5E5E5;
+
+}
+.titre_quest{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h2{
+  margin-bottom:25px ;
+}
+.rephamaz{
+  display: flex;
+}
+.rep{
+  display: none ;
 }
