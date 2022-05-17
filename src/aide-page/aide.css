@@ -10,11 +10,12 @@
 }
 
 .result {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  /* height: 100%; */
   background: url("../assets/bg.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  overflow-x: hidden;
 }
 
 header {
@@ -27,6 +28,7 @@ header {
   background-color: white;
   -webkit-app-region: drag;
   border-bottom: 1px solid #787486;
+  
 }
 
 .logo {
@@ -50,7 +52,7 @@ header {
 
 .under-header {
   width: 100%;
-  height: 85%;
+  min-height: 100vh;
   display: flex;
 }
 
@@ -58,13 +60,13 @@ aside {
   font-family: "Inter", sans-serif;
   color: #787486;
   width: 215px;
-  height: 100%;
+  
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  gap: 25%;
+  padding-top: 30vh;
+  gap: 70px;
   border-right: 1px #787486 solid;
 }
 
@@ -83,9 +85,10 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   color: #555555;
   font-family: "Montserrat", sans-serif;
+  
 }
 
 a {
@@ -134,44 +137,62 @@ h2{
   display: none ;
 }
 .infos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  row-gap: 40px;
-  column-gap: 40px;
+  gap: 40px;
+}
+
+
+.row1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   
-  }
-  input {
-    width: 100%;
-    height: 70%;
-    border: none;
-    
-  }
-.infos > * {
+}
+  
+/* .infos > * {
   border: 3px solid #743F8C ;
   border-radius: 4px;
-}
+} */
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
 }
-label {
-  position:relative;
-  top:-12px;
-  left:20px;
-  background-color: white;
+.mail{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  width: 100%;
 }
-.message {
-  grid-row-start:3 ;
-  grid-row-end: 7 ;
-  grid-column: span 2 ;
-  
+textarea{
+  height: 100px;
+  width: 100%;
+}
+.messages {
+  display: flex;
+  flex-direction: row;
 }
 .envoyer {
-  grid-row-start:7 ;
-  grid-row-end: 8;
-  grid-column-start: 2;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+input{
+  width: 100%;
+  height: 50px;
+  caret-color:#a996f6;
+  line-height: 100%;
+
+}
+.prenom,.nom {
+  width: 45% ;
+}
+form{
+  width: 80%;
 }
