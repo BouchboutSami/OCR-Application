@@ -93,3 +93,36 @@ a {
   text-decoration: none;
   color: #787486;
 }
+.element{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  width: 80%;
+  height: 30%;
+  font-family: "Inter", sans-serif;
+  color: #555555;
+  background-color: #8b68a766;
+  border-radius: 20px;
+  margin: 10px;
+  
+  transition: all 200ms ease-out;
+
+  
+}
+.element:hover {
+  transform: scale(1.01);
+}
+.imgTreated{
+  margin: 20px;
+  height: 180px;
+  width: 180px;
+  border-radius: 40%;
+}
+.titles{
+  font-weight: bolder;
+}
+.imgTreated ,
+.description{
+  background-color: rgba(254, 194, 123,0);
+}
