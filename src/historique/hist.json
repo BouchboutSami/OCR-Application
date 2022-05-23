@@ -1,0 +1,24 @@
+
+[
+  {
+    "imagesize": 3332,
+    "result": "3",
+    "font": "futura",
+    "score": "82",
+    "path": "/Users/macbook/Desktop/test2.jpeg"
+  },
+  {
+    "imagesize": 1644,
+    "result": "2",
+    "font": "Helvetica",
+    "score": "83",
+    "path": "/Users/macbook/Desktop/test.png"
+  },
+  {
+    "imagesize": 1598,
+    "result": "7",
+    "font": "Franklin-Gothic",
+    "score": "93",
+    "path": "/Users/macbook/Desktop/number7.gif"
+  }
+]
