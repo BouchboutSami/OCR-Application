@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+  background-color: #fafafa;
+}
+.body {
+  position: relative;
+  overflow: hidden;
+}
+.loader {
+  width: 500px;
+  position: relative;
+  border-radius: 10px;
+  position: absolute;
+  padding: 2px;
+  left: 33.5%;
+  top: 65%;
+}
+.loader:before {
+  content: "";
+  border-radius: 10px;
+  background-color: #555555;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+}
+.loader .loaderBar {
+  position: absolute;
+  border-radius: 10px;
+  top: -4.5px;
+  right: 100%;
+  bottom: 0;
+  left: -4.5px;
+  height: 12px;
+  background: #a996f6;
+  width: 0;
+  animation: borealisBar 2s linear infinite;
+}
+@keyframes borealisBar {
+  0% {
+    left: 0%;
+    right: 100%;
+    width: 0%;
+  }
+  10% {
+    left: 0%;
+    right: 75%;
+    width: 25%;
+  }
+  90% {
+    right: 0%;
+    left: 75%;
+    width: 25%;
+  }
+  100% {
+    left: 100%;
+    right: 0%;
+    width: 0%;
+  }
+}
+.LOGO {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+}
+.shapes {
+  position: relative;
+}
+.Polygon1 {
+  position: absolute;
+  left: 50%;
+  top: 500%;
+  animation-delay: 20s;
+  animation: afterDelay 20s infinite;
+}
+.Polygon2 {
+  bottom: 150px;
+}
+.Cercle {
+  position: absolute;
+  left: 10%;
+  animation-delay: 10s;
+  animation: afterDelay2 10s infinite;
+}
+@keyframes afterDelay {
+  0% {
+    transform: rotate(35deg);
+    left: 50%;
+  }
+  10% {
+    transform: rotate(90deg);
+    left: 60%;
+  }
+  50% {
+    transform: rotate(39deg);
+    left: 40%;
+  }
+  100% {
+    transform: rotate(180deg);
+    left: 30%;
+  }
+}
+@keyframes afterDelay2 {
+  0% {
+    top: 20%;
+  }
+  25% {
+    top: 80%;
+  }
+  50% {
+    top: 100%;
+  }
+  75% {
+    top: 140%;
+  }
+  100% {
+    top: 160%;
+  }
+}
+.Rectangle {
+  position: absolute;
+  left: 80%;
+  top: 100%;
+  animation: afterDelay3 10s infinite;
+}
+@keyframes afterDelay3 {
+  0% {
+    top: 80%;
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 190%;
+    transform: rotate(90deg);
+  }
+}

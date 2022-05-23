@@ -59,13 +59,12 @@ aside {
   font-family: "Inter", sans-serif;
   color: #787486;
   width: 215px;
-
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 30vh;
-  gap: 70px;
+  justify-content: center;
+  gap: 25%;
   border-right: 1px #787486 solid;
 }
 
@@ -93,7 +92,7 @@ a {
   text-decoration: none;
   color: #787486;
 }
-.element{
+.element {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -105,24 +104,22 @@ a {
   background-color: #8b68a766;
   border-radius: 20px;
   margin: 10px;
-  
-  transition: all 200ms ease-out;
 
-  
+  transition: all 200ms ease-out;
 }
 .element:hover {
   transform: scale(1.01);
 }
-.imgTreated{
+.imgTreated {
   margin: 20px;
   height: 180px;
   width: 180px;
   border-radius: 40%;
 }
-.titles{
+.titles {
   font-weight: bolder;
 }
-.imgTreated ,
-.description{
-  background-color: rgba(254, 194, 123,0);
+.imgTreated,
+.description {
+  background-color: rgba(254, 194, 123, 0);
 }
