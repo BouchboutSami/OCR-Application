@@ -29,7 +29,7 @@ app.on("ready", () => {
     splash.destroy();
     mainWindow.loadFile("./src/Home-page/home.html");
     mainWindow.show();
-  }, 8000);
+  }, 6000);
   mainWindow.loadURL(`file://${__dirname}/src/Home-page/home.html`);
 });
 

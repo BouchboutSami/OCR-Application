@@ -63,9 +63,10 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  gap: 25%;
+  padding-top: 150px;
+  gap: 100px;
   border-right: 1px #787486 solid;
+  overflow: hidden;
 }
 
 .acceuil,
@@ -73,7 +74,6 @@ aside {
 .Quitter {
   display: flex;
   gap: 20px;
-  align-items: center;
   align-items: center;
   margin-left: 25%;
 }
@@ -86,35 +86,38 @@ aside {
   gap: 50px;
   color: #555555;
   font-family: "Montserrat", sans-serif;
+  padding-top: 30px;
 }
 
 a {
   text-decoration: none;
   color: #787486;
 }
+
 .element {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   gap: 100px;
   width: 80%;
-  height: 30%;
+  height: 200px;
   font-family: "Inter", sans-serif;
-  color: #555555;
-  background-color: #8b68a766;
+  color: white;
+  background-color: #a996f6;
   border-radius: 20px;
   margin: 10px;
-
   transition: all 200ms ease-out;
 }
+
 .element:hover {
   transform: scale(1.01);
 }
 .imgTreated {
   margin: 20px;
-  height: 180px;
+  height: auto;
   width: 180px;
-  border-radius: 40%;
+  max-height: 150px;
 }
 .titles {
   font-weight: bolder;
@@ -122,4 +125,8 @@ a {
 .imgTreated,
 .description {
   background-color: rgba(254, 194, 123, 0);
+}
+
+.description {
+  margin-right: 50px;
 }

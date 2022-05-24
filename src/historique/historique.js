@@ -14,10 +14,18 @@ http.onload = function () {
                <div class="element"> 
                <img src="${item.path}" alt="Image deleted" class="imgTreated" >
                <p class="description">  
-                     <span class ="titles" style= "color:#34C924 "> Result : </span> ${item.result} <br><br>
-                     <span class ="titles" style= "color:#26C4EC"> Image Size : </span> ${item.imagesize}<br><br>
-                     <span class ="titles" style= "color:#F00020"> Font : </span> ${item.font}<br><br>
-                     <span class ="titles" style= "color:purple"> Score : </span> ${item.score}
+                     <span class ="titles" style= "color:black "> Résultat : </span> ${
+                       item.result
+                     } <br><br>
+                     <span class ="titles" style= "color:black"> Taille de l'image : </span> ${Math.floor(
+                       item.imagesize / 1024
+                     )} ko <br><br>
+                     <span class ="titles" style= "color:black"> Font : </span> ${
+                       item.font
+                     }<br><br>
+                     <span class ="titles" style= "color:black"> Précision : </span> ${
+                       item.score
+                     }
                
                </p>
                </div>

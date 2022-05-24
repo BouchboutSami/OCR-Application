@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const font = localStorage.getItem("font");
   document.getElementById("input-image").setAttribute("src", path);
   document.getElementById("size-image").innerHTML =
-    "File size : " + Math.floor(size / 1024) + " ko";
-  document.getElementById("name-image").innerHTML = "File name : " + name;
-  document.getElementById("result").innerHTML = "Result : " + result;
-  document.getElementById("Accuracy").innerHTML = "Accuracy : " + accuracy;
-  document.getElementById("font").innerHTML = "Font : " + font;
+    "Taille de l'image : " + Math.floor(size / 1024) + " ko";
+  document.getElementById("name-image").innerHTML = "Nom du fichier : " + name;
+  document.getElementById("result").innerHTML = "Résultat : " + result;
+  document.getElementById("Accuracy").innerHTML =
+    "Précision : " + accuracy + " %";
+  document.getElementById("font").innerHTML = "Fonte : " + font;
 });

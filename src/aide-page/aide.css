@@ -59,14 +59,14 @@ aside {
   font-family: "Inter", sans-serif;
   color: #787486;
   width: 215px;
-
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 30vh;
-  gap: 70px;
+  padding-top: 150px;
+  gap: 100px;
   border-right: 1px #787486 solid;
+  overflow: hidden;
 }
 
 .acceuil,
@@ -87,6 +87,7 @@ aside {
   gap: 50px;
   color: #555555;
   font-family: "Montserrat", sans-serif;
+  padding-top: 30px;
 }
 
 a {
@@ -124,6 +125,7 @@ h1 {
 }
 h2 {
   margin-bottom: 25px;
+  align-self: center;
 }
 .rephamaz {
   display: flex;
@@ -132,11 +134,11 @@ h2 {
 .rep {
   display: none;
 }
+
 .infos {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   width: 100%;
   gap: 40px;
 }
@@ -149,14 +151,13 @@ h2 {
   align-items: center;
 }
 
-/* .infos > * {
-  border: 3px solid #743F8C ;
-  border-radius: 4px;
-} */
-input:focus,
-textarea:focus,
-select:focus {
+input,
+textarea,
+select {
   outline: none;
+  border: 3px solid #a996f6;
+  border-radius: 4px;
+  font-size: 24px;
 }
 .mail {
   /* display: flex;
@@ -175,7 +176,7 @@ textarea {
 .envoyer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
 }
 input {
   width: 100%;
@@ -189,4 +190,16 @@ input {
 }
 form {
   width: 80%;
+  margin-bottom: 40px;
+}
+
+.btn {
+  color: white;
+  background-color: #a996f6;
+  width: 50%;
+}
+
+.contact-titre {
+  margin-bottom: 30px;
+  text-align: center;
 }
